@@ -40,6 +40,7 @@ public class optimizedartifacttest
         int SandsLengthChange = 0;
         int GobletLengthChange = 0;
         int CircletLengthChange = 0;
+        int ArtifactLengthChange = 0;
 
         while (currentrun != desiredartifactruns)
         {
@@ -51,6 +52,7 @@ public class optimizedartifacttest
             SandsLengthChange++;
             GobletLengthChange++;
             CircletLengthChange++;
+            ArtifactLengthChange++;
 
             currentcharacter.RefreshStats("Cryo", 10000, 1200, 700, "Bow", "Hunter's Bow", 600, "ATKPercent", 0, "CD", 0, currentcharacter.CharFlower(), currentcharacter.CharFeather(), currentcharacter.CharSands(), currentcharacter.CharGoblet(), currentcharacter.CharCirclet());
 
@@ -94,7 +96,9 @@ public class optimizedartifacttest
                     
                     FlowerChanges++;
                     System.out.println("Took " + FlowerLengthChange + " artifacts to improve Flower. (iteration = " + currentrun + ")");
+                    System.out.println("Took " + ArtifactLengthChange + " artifacts to improve damage.");
                     FlowerLengthChange = 0;
+                    ArtifactLengthChange = 0;
                 }
             }
             else if (randomartifact.Type().equals("Feather"))
@@ -115,7 +119,9 @@ public class optimizedartifacttest
 
                     FeatherChanges++;
                     System.out.println("Took " + FeatherLengthChange + " artifacts to improve Feather. (iteration = " + currentrun + ")");
+                    System.out.println("Took " + ArtifactLengthChange + " artifacts to improve damage.");
                     FeatherLengthChange = 0;
+                    ArtifactLengthChange = 0;
                 }
             }
             else if (randomartifact.Type().equals("Sands"))
@@ -135,7 +141,9 @@ public class optimizedartifacttest
 
                     SandsChanges++;
                     System.out.println("Took " + SandsLengthChange + " artifacts to improve Sands. (iteration = " + currentrun + ")");
+                    System.out.println("Took " + ArtifactLengthChange + " artifacts to improve damage.");
                     SandsLengthChange = 0;
+                    ArtifactLengthChange = 0;
                 }
             }
             else if (randomartifact.Type().equals("Goblet"))
@@ -156,7 +164,9 @@ public class optimizedartifacttest
 
                     GobletChanges++;
                     System.out.println("Took " + GobletLengthChange + " artifacts to improve Goblet. (iteration = " + currentrun + ")");
+                    System.out.println("Took " + ArtifactLengthChange + " artifacts to improve damage.");
                     GobletLengthChange = 0;
+                    ArtifactLengthChange = 0;
                 }
             }
             else if (randomartifact.Type().equals("Circlet"))
@@ -177,7 +187,9 @@ public class optimizedartifacttest
 
                     CircletChanges++;
                     System.out.println("Took " + CircletLengthChange + " artifacts to improve Circlet. (iteration = " + currentrun + ")");
+                    System.out.println("Took " + ArtifactLengthChange + " artifacts to improve damage.");
                     CircletLengthChange = 0;
+                    ArtifactLengthChange = 0;
                     
                 }
             }   

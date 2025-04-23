@@ -9,6 +9,13 @@
             "name": "optimizedartifacttest",
             "request": "launch",
             "mainClass": "optimizedartifacttest",
+            "projectName": "jenshinEntrepreneurship_33ea3eea"
+        },
+        {
+            "type": "java",
+            "name": "optimizedartifacttest",
+            "request": "launch",
+            "mainClass": "optimizedartifacttest",
             "projectName": "GenshinImpactArtifact_960c3a51"
         },
         {
